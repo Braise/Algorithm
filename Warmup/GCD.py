@@ -14,8 +14,10 @@ def EuclidianAlgorithm(a, b):
     return EuclidianAlgorithm(b, a%b)
 
 def LeastCommonMultiple(a, b):
-    return int((a*b)/EuclidianAlgorithm(a, b))
+    return (a*b)//EuclidianAlgorithm(a, b)
 
-print(EuclidianAlgorithm(226553150, 1023473145))
+print("Euclidian : " + str(EuclidianAlgorithm(226553150, 1023473145)))
 print(LeastCommonMultiple(226553150, 1023473145))
+#print(ComputGCDSlow(226553150, 1023473145))
+print(str(226553150*1023473145))
 input()
