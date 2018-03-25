@@ -2,8 +2,8 @@
 
 def ComputFibonacciNumberSlow(n):
     if(n == 1 or n == 0):
-        return n
-    return ComputFibonacciNumber(n - 1) + ComputFibonacciNumber(n - 2)
+        return n   
+    return ComputFibonacciNumberSlow(n - 1) + ComputFibonacciNumberSlow(n - 2)
 
 def ComputFibonacciNumberFast(n):
     if(n <= 1):
