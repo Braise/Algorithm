@@ -33,8 +33,9 @@ def GetFibonacciModulo(i, m):
     return fib % m
 
 def GetFibonacciSum(n):
-    #return GetFibonacciModulo(n + 2, 10) - 1
-    return ComputFibonacciNumber(n + 2) - 1
+    return GetFibonacciModulo(n + 2, 10) - 1
+    #return ComputFibonacciNumber(n + 2) - 1
 
 #print(GetFibonacciSum(100) % 10)
-print(GetFibonacciSum(50))
+print(GetFibonacciSum(999999))
+input()
