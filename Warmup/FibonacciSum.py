@@ -34,8 +34,17 @@ def GetFibonacciModulo(i, m):
 
 def GetFibonacciSum(n):
     return GetFibonacciModulo(n + 2, 10) - 1
-    #return ComputFibonacciNumber(n + 2) - 1
+
+    
+def GetPartialFibonacciSum(n, m):
+    if( n == m):
+        return ComputFibonacciNumber(n)
+
+    inf = ComputFibonacciNumber(n)
+    sup = ComputFibonacciNumber(m + 2) - 1
+    return sup - inf
 
 #print(GetFibonacciSum(100) % 10)
-print(GetFibonacciSum(999999))
+#print(GetFibonacciSum(999999))
+print(GetPartialFibonacciSum(10, 10))
 input()
